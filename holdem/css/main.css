@@ -1,0 +1,159 @@
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #0076ae;
+	font-family: Arial, sans-serif; 
+}
+header {
+	text-align: center;
+	height: 15%;
+	background-image: url('http://www.chriswilcoxpoker.com/wp-content/uploads/2012/11/onlinepoker.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: rgb(2,132,130);
+	font-family: 'Lobster Two', cursive;
+	font-size: 6em;
+	text-shadow: 4px 6px 2px #000000;
+	margin: 14px auto;
+}
+h3 {
+	color: #ffd700;
+	font-size: 2.2em;
+	padding-top: 12px;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+nav {
+	background: rgba(0, 18, 60, .75);
+	margin-top: 0;
+	clear: both;
+}
+a {
+	color: white;
+	background: rgba(255,255, 255, .5);
+	text-decoration: none;
+	display: block;
+	float: left;
+	font-size: 26px;
+	padding: 35px;
+	margin: 0 8px 0 0;
+	font-weight: 700;
+}
+a:hover, button:hover {
+	background: #ee5f3c;
+	text-shadow: 2px 2px 1.2px black;
+	color: rgb(0, 112, 210);
+}
+
+main {
+	text-align: center;
+	background: rgba(0,18,60,.75);
+	position: relative;
+}
+section {
+	background-color: rgba(0, 18, 60, .75);
+	position: relative;
+	margin-top: 0;
+	padding: auto;
+}
+p {
+	color: white;
+	font-size: 1.2em;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.reveal {
+	opacity: 1;
+	height: 80px;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.board {
+	height: 800px;
+	width: 900px;
+	display: inline-block;
+	background: rgba(0,160,100,.95);
+	border-radius: 12%;
+	margin-bottom: 0px;
+	position: relative;
+}
+.opponent {
+	display: inline-block;
+}
+.player {
+	width: 900px;
+	position: absolute;
+	bottom: 0;
+	padding: 0 0 20px 0;
+}
+
+#flop {
+	position: absolute;
+	top: 40%;
+	left: 33%;
+}
+.card, .player-card, .table-card{
+	height: 150px;
+	width: 100px;
+	border: 2px solid black;
+	background: url('https://s-media-cache-ak0.pinimg.com/236x/5f/18/c3/5f18c39570b0157bdf7d263bdc13128e.jpg');
+	background-position: center left;
+	border-radius: 20px;
+	margin-right: -50px;
+	display: inline-block;
+}
+
+.player-card {
+	height: 200px;
+	width: 150px;
+	margin: 0;
+}
+
+footer {
+	text-align: center;
+	background: rgba(0,18,60,.9);
+	color: white;
+	font-size: 1.4em;
+	padding: 6px;
+	bottom: 0;
+}
+.name {
+	color: #ff0000;
+}
+
+img {
+	width: 150px;
+	height: 200px;
+}
+ul {
+	background: black;
+}
+li {
+	display: inline-block;
+}
+button {
+	display: block;
+	margin: 8px auto 4px auto;
+	color: white;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+	background: rgba(0, 0, 0, .7);
+	padding: 10px 18px;
+	border: none;
+	z-index: 2;
+}
+

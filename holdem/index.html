@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <html>
+	<title>Memory Game</title>
+	<link rel='stylesheet' type='text/css' href='css/main.css'>
+	<link rel='stylesheet' type='css/reset' href='css/reset.css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<h1>Texas Holdem</h1>
+	</header>	
+	<hr />
+	<main class='clearfix'> 
+		<!-- <section>
+			<h3>Instructions</h3>
+			<p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso, or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
+		</section> -->
+		<button type='button' onclick='createCard()'>PLAY</button>
+		
+		<div class='board' id='game-board'>
+			<div class='opponent'>
+				<div class='card'></div>
+				<div class='card'></div>
+			</div>
+			<div id='flop'>
+			<!-- these cards are used to illustrate positioning. cards will be created with javascript based on event round -->
+				<div class='table-card'></div>
+				<div class='table-card'></div>
+				<div class='table-card'></div>
+				<div class='table-card'></div>
+				<div class='table-card'></div>
+			</div>
+			<div class='player'>
+				<div class='player-card'></div>
+				<div class='player-card'></div>
+			</div>
+		</div> 
+		<ul class='controls'>
+			<li><button class='call'>Call/Check</button></li>
+			<li><button class='raise'>Raise</button></li>
+			<li><button class='fold'>Fold</button></li>
+		</ul>
+	</main>
+	<footer>&clubs; Created by <span class='name'>Aaron Steele</span> &hearts;</footer>
+	<script src='main.js'></script>
+	<script src='holdem.js'></script>
+</body>
+</html>
