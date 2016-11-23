@@ -1,22 +1,21 @@
 body {
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: #0076ae;
 	font-family: Arial, sans-serif; 
+	color: white;
 }
 header {
 	text-align: center;
-	height: 15%;
-	background-image: url('http://www.chriswilcoxpoker.com/wp-content/uploads/2012/11/onlinepoker.jpg');
+	background-image: url('onlinepoker.jpg' );
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 h1 {
-	color: rgb(2,132,130);
+	color: rgb(238, 201, 0);
 	font-family: 'Lobster Two', cursive;
 	font-size: 6em;
-	text-shadow: 4px 6px 2px #000000;
+	text-shadow: 6px 2px 2px #f00;
 	margin: 14px auto;
 }
 h3 {
@@ -33,93 +32,25 @@ h3 {
 	font-size: 0;
 }
 nav {
-	background: rgba(0, 18, 60, .75);
-	margin-top: 0;
-	clear: both;
+	background: rgba(255,255,255,.5);
+	padding: 0 8px;
+	height: 15%;
 }
 a {
-	color: white;
-	background: rgba(255,255, 255, .5);
 	text-decoration: none;
-	display: block;
-	float: left;
-	font-size: 26px;
-	padding: 35px;
-	margin: 0 8px 0 0;
 	font-weight: 700;
-}
-a:hover, button:hover {
-	background: #ee5f3c;
-	text-shadow: 2px 2px 1.2px black;
-	color: rgb(0, 112, 210);
-}
-
-main {
-	text-align: center;
-	background: rgba(0,18,60,.75);
-	position: relative;
-}
-section {
-	background-color: rgba(0, 18, 60, .75);
-	position: relative;
-	margin-top: 0;
-	padding: auto;
-}
-p {
-	color: white;
-	font-size: 1.2em;
-	height: 0;
-	opacity: 0;
-	-webkit-transition: .5s;
-	-moz-transition: .5s;
-	transition: .5s;
-}
-.reveal {
-	opacity: 1;
-	height: 80px;
-	-webkit-transition: .5s;
-	-moz-transition: .5s;
-	transition: .5s;
-}
-.board {
-	height: 800px;
-	width: 900px;
+	font-size: 2em;
+	padding: 8px;
+	color: #fff;
 	display: inline-block;
-	background: rgba(0,160,100,.95);
-	border-radius: 12%;
-	margin-bottom: 0px;
-	position: relative;
+	padding-right: 20px;
+	padding-left: 10px;
+	float: left;
 }
-.opponent {
-	display: inline-block;
-}
-.player {
-	width: 900px;
-	position: absolute;
-	bottom: 0;
-	padding: 0 0 20px 0;
-}
-
-#flop {
-	position: absolute;
-	top: 40%;
-	left: 33%;
-}
-.card, .player-card, .table-card{
-	height: 150px;
-	width: 100px;
-	border: 2px solid black;
-	background: url('https://s-media-cache-ak0.pinimg.com/236x/5f/18/c3/5f18c39570b0157bdf7d263bdc13128e.jpg');
-	background-position: center left;
-	border-radius: 20px;
-	margin-right: -50px;
-	display: inline-block;
-}
-
-.player-card {
-	height: 200px;
-	width: 150px;
-	margin: 0;
+a:hover {
+	background: rgba(0, 0, 0,.75);
+	text-shadow: 4px 4px 1.2px black;
+	box-shadow: -8px 0 black;
 }
 
 footer {
@@ -130,30 +61,122 @@ footer {
 	padding: 6px;
 	bottom: 0;
 }
-.name {
+.dev {
 	color: #ff0000;
 }
 
-img {
-	width: 150px;
-	height: 200px;
-}
-ul {
-	background: black;
-}
-li {
-	display: inline-block;
-}
-button {
-	display: block;
-	margin: 8px auto 4px auto;
-	color: white;
-	font-weight: 700;
-	font-size: 2em;
-	text-decoration: none;
-	background: rgba(0, 0, 0, .7);
-	padding: 10px 18px;
-	border: none;
-	z-index: 2;
+p {
+	font-size: 18px;
 }
 
+/* This section is for the game or other 'per page styles'*/
+
+	main { 
+		text-align: center;
+		background-color: rgb(0, 118, 174);
+		background-image: url('spades.png');
+		background-position: cover; 
+		background-size: 10%;
+	}
+	.bot {
+		padding: 0 auto;
+	}
+	.avatar {
+		width: 60px;
+		height: 60px;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.name {
+		color: #fa0000;
+		background: rgba(0,0,0,.65);
+		padding: 4px;
+		width: 52px;
+		margin: 0 auto;
+		border-radius: 8px;
+	}
+
+	.board {
+		background: rgb(1, 127, 50);
+		position: relative;
+		width: 900px;
+		height: 700px;
+		margin: 0 auto;
+		border-radius: 325px;
+		border: 12px solid #FFFA48;
+	}
+	.card, .flop-card {
+		height: 135px;
+		width: 85px;
+		background: url('leaf_pattern.jpg');
+		border: 2px solid black;
+		display: inline-block;
+		margin: 0 -25px;
+	}
+	.dealer {
+		position: absolute;
+		top: 12px;
+		left: 415px;	
+	}
+	.flop-card {
+		margin: 0;
+	}
+	.user-section {
+		position: absolute;
+		bottom: 30px;
+		left: 415px;
+	}
+	.flop {
+		position: absolute;
+		top: 243px;
+		left: 222px;
+	}
+	.bet-amount {
+		background-color: rgba(0,0,0,.6);
+		padding: 2px;
+		border-radius: 5px;
+		margin: 0 0 2px 0;
+		opacity: 0;
+	}
+	.pot {
+		background-color: rgba(0,0,0,.6);
+		position: absolute;
+		bottom: 40%;
+		left: 45%;
+		padding: 8px;
+		border-radius: 5px;
+	}
+
+	.control-interface {
+		position: absolute;
+		bottom: 0;
+		right: 33%;
+		display: inline-block;
+	}
+	button {
+		padding: 14px;
+		background: rgba(99,0,0,.95);
+		border: none;
+		font-size: 1.2em;
+		font-weight: 700;
+		color: #fff;
+		border-radius: 2px;		
+	}
+	.bets {
+	display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+	
+	.bets a {
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	}
+	.show {
+		display: block;
+	}

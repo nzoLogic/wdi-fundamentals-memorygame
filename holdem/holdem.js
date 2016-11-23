@@ -45,30 +45,35 @@ for gameplay
 	/* always deal users cards faceup */
 
 //deals cards (dealer first, then user/computer)
-	var dealCards = function(deck){
-		var dealer = document.getElementById('dealer'),
-			user = document.getElementById('user'),
-			round = 1, 
-			suit = suitSelect(),
-			val = valSelect (),
-			card = deck[suit][val].slice();
-	//if preflop deal each person 2 cards
-	console.log(card);
-	//if it's the flop deal 3 face up cards
-
-	//if its the turn deal one card face up
-
-	//if it's the river deal one card face up
-
-	};
-
+var createCard = function(){
+		//game board
+	var board = document.getElementById('flopLoc'),
+		num = 4;
+		//card creation & attribute assignments
+	if(document.getElementsByClassName('flop').length < 4){
+		for(var i = 0; i < num; i++){
+			var card = document.createElement('div');
+			card.className = 'card';
+			card.setAttribute('data-card', cards[i]);
+			card.addEventListener('click', isTwoCards);
+			board.appendChild(card);
+		}
+	}
+	document.getElementsByTagName('p')[0].removeAttribute('class');
+};
 //preflop round (deals 2 cards)
-	var preflop = function(dealer, user, deck){
-		//deal dealer 2 cards
+	var startHand = function(dealerHand, userHand){
+		var user = document.getElementsByClassName('user-section')[0],
+			dealer = document.getElementsByClassName('dealer')[0];
+		//deal user one card
 
-		//deal user 2 cards 
+		//dealer gets a card
+
 	};	
 
-
-var currentDeck = compiledDeck();
-var suit = suitSelect();
+var cardVals = cardGenerator(),
+	val = cardVals[valSelect()],
+    suit = suitSelect(),
+    opponentsCard = [],
+	usersCard = [],
+	flop = [];
