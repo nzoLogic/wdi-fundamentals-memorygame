@@ -11,7 +11,6 @@ body {
 }
 header {
 	text-align: center;
-	height: 15%;
 }
 
 h1 {
@@ -78,9 +77,6 @@ p {
 .reveal {
 	opacity: 1;
 	height: 80px;
-	-webkit-transition: .5s;
-	-moz-transition: .5s;
-	transition: .5s;
 }
 .board {
 	height: 50%;
@@ -128,6 +124,5 @@ button {
 	background: transparent;
 	padding: 10px 18px;
 	border: none;
-	z-index: 2;
 }
 
